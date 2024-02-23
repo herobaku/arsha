@@ -19,6 +19,7 @@ html {
 
 body {
   background: #f3f5fa;
+  font-family: var(--open-sans-family);
 }
 
 .logo {
@@ -26,6 +27,12 @@ body {
   font-family: "Jost", sans-serif;
   font-weight: 500;
   color: #fff;
+}
+
+/* Main */
+
+main section {
+  padding: 60px 0;
 }
 
 /* Header */
@@ -258,14 +265,48 @@ header .fa-bars {
   }
 }
 
+@media screen and (max-width: 568px) {
+  #brand img {
+    max-width: 35%;
+  }
+}
+
 /* About */
 
 #about {
   padding: 60px 0;
   background: #fff;
+  font-family: var(--open-sans-family);
+}
+
+#about svg {
+  width: 1.5em;
+  height: 1.5em;
+  fill: var(--aqua-light);
+}
+
+#about li {
+  column-gap: 14px;
+  margin-top: 10px;
+}
+
+#about .btn-primary-custom {
+  font: 500 14px "Poppins", sans-serif;
+  padding: 12px 32px;
+  border-radius: 4px;
+  color: var(--aqua-light);
+}
+
+#about .btn-primary-custom:hover {
+  color: #fff;
+  border: 2px solid var(--aqua-light);
 }
 
 /* Total */
+
+.title-group {
+  margin-bottom: 30px;
+}
 
 .title-group h2 {
   font: 32px var(--jost-family);
@@ -295,8 +336,290 @@ header .fa-bars {
 
 .title-group h2::before {
   width: 50px;
-  height: 5px;
+  height: 2px;
+  bottom: -1px;
+  z-index: 5;
   background: var(--aqua-light);
 }
 
-.title-group p {}
+
+/* Services */
+
+#services .box {
+  background: #fff;
+  padding: 50px 30px;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  transition: transform .5s;
+}
+
+#services .box:hover {
+  transform: translateY(-10px);
+}
+
+#services .box:hover h2 {
+  color: var(--aqua-light);
+}
+
+#services .box i {
+  font-size: 2.5rem;
+  color: var(--aqua-light);
+}
+
+#services .box h2 {
+  font-size: 24px;
+  font-family: var(--jost-family);
+  margin-bottom: 15px;
+  margin-top: 15px;
+  transition: color .5s;
+}
+
+#services .box p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* Call */
+
+section.call {
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../images/cta-bg.jpg") fixed center/cover;
+}
+
+.call {
+  color: #fff;
+  padding: 120px 0;
+}
+
+.call h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.call button.btn-primary-custom {
+  font: 500 16px var(--jost-family);
+  letter-spacing: 1px;
+  margin-inline: 10px;
+  padding: 12px 40px;
+  border: 2px solid #fff;
+}
+
+.call button.btn-primary-custom:hover {
+  border: 2px solid transparent;
+}
+
+/* Team */
+
+.team-box {
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all .5s;
+}
+
+.team-box:hover {
+  transform: translateY(-10px);
+}
+
+.team-box h2 {
+  font-size: 20px;
+}
+
+.team-box h3 {
+  font: 500 15px var(--jost-family);
+  font-size: 15px;
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.team-box p {
+  font-size: 14px;
+}
+
+.team-box h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 1px;
+  background: #ddd;
+}
+
+.team-box ul li a {
+  background: #eff2f8;
+  width: 32px;
+  height: 32px;
+  font-size: 1rem;
+  color: var(--blue-light);
+}
+
+.team-box ul li a:hover {
+  background: var(--aqua-light);
+}
+
+.team-box ul li a:hover i {
+  color: #fff;
+}
+
+/* Price */
+
+.pricing-box {
+  border-top: 4px solid transparent;
+  padding: 60px 40px;
+  box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+  border-radius: 5px;
+}
+
+.pricing-box.active {
+  border-top: 4px solid var(--aqua-light);
+}
+
+.pricing-box ul {
+  padding: 20px 0;
+  margin: 20px 0 25px;
+}
+
+.pricing-box li i {
+  font-family: var(--jost-family);
+  color: var();
+  font-size: 18px;
+}
+
+.pricing-box ul li i {
+  font-size: 1.5rem;
+  color: #28a745;
+}
+
+.pricing-box ul li i.deactive {
+  color: #ccc;
+}
+
+.pricing-box h3 {
+  font: 500 20px var(--jost-family);
+  margin-bottom: 15px;
+  color: #37517e;
+}
+
+.pricing-box h4 {
+  font: 400 48px var(--jost-family);
+  color: #37517e;
+  margin: 0;
+}
+
+.pricing-box h5 {
+  color: var(--aqua-light);
+  font: 18px var(--jost-family);
+}
+
+.pricing-box button.btn-primary-custom {
+  font-family: 500 16px var(--jost-family);
+  padding: 12px 35px;
+  color: var(--aqua-light);
+  border: 1px solid var(--aqua-light);
+}
+
+.pricing-box button.btn-primary-custom.active {
+  background: var(--aqua-light);
+  color: #fff;
+}
+
+.pricing-box button.btn-primary-custom:hover {
+  color: #fff;
+}
+
+/* Questions */
+
+#questions .accordion-item {
+  margin-top: 15px;
+}
+
+#questions .accordion-button::after {
+  width: 24px;
+  height: 25px;
+  background-size: 24px 25px;
+}
+
+.quest-circle {
+  width: 25px;
+  height: 25px;
+  border: 3px solid var(--aqua-light);
+}
+
+#questions button.accordion-button {
+  border-radius: 4px;
+}
+
+#questions h2.accordion-header {
+  font: 500 16px "Poppins", sans-serif;
+}
+
+#questions h2.accordion-header span {
+  color: var(--blue-light);
+}
+
+#questions .accordion-button:focus {
+  box-shadow: none;
+}
+
+/* Contact */
+
+.contact-group {
+  padding: 30px;
+}
+
+.contact-group .icon {
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  background: #e7f5fb;
+}
+
+.contact-group .icon:hover i {
+  color: #fff;
+}
+
+.contact-group .icon:hover {
+  background: #47b2e4;
+}
+
+.contact-group .icon i {
+  color: var(--aqua-light);
+}
+
+.contact-group .contact-desc h2 {
+  font: 600 22px var(--jost-family);
+  margin: 10px 0 5px;
+  color: #37517e;
+}
+
+.contact-group .contact-desc h4 {
+  font-size: 14px;
+  color: #6182ba;
+}
+
+.contact-group>div {
+  margin-bottom: 20px;
+}
+
+.contact-group input {
+  height: 44px;
+}
+
+.contact-group input:focus,
+.contact-group textarea:focus {
+  border: 1px solid var(--aqua-light);
+  box-shadow: none;
+}
+
+.contact-group .btn-primary-custom {
+  background: #47b2e4;
+  border: 0;
+  padding: 12px 34px;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.contact-group textarea {
+  height: 210px;
+}
