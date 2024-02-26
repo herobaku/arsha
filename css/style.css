@@ -631,8 +631,112 @@ section.call {
   background: #fff;
 }
 
+
+.footer__top .logo {
+  color: var(--blue-light);
+  font-size: 28px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.footer__top address {
+  font-size: 14px;
+  font-family: var(--jost-family);
+}
+
+.footer__top ul.address {
+  margin-top: 25px;
+}
+
+.footer__top h3 {
+  font-size: 16px;
+  font-family: var(--jost-family);
+}
+
+.footer__top .footer__menu {
+  padding-top: 10px;
+}
+
+.footer__top .footer__menu .footer__item {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.footer__top .footer__menu .footer__item i {
+  margin-right: 5px;
+  vertical-align: middle;
+  font-size: .6rem;
+  color: var(--aqua-light);
+}
+
+.footer__top .footer__menu .footer__link {
+  font-size: 14px;
+  color: #777777;
+  font-family: var(--open-sans-family);
+}
+
+.footer__social ul>li {
+  width: 36px;
+  height: 36px;
+  background: var(--blue-light);
+}
+
+.join {
+  background: #f3f5fa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer__bottom {
   padding: 30px 0;
   color: #fff;
   background: #37517e;
+}
+
+.footer__bottom p {
+  margin: 0;
 }
