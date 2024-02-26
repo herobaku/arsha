@@ -31,9 +31,9 @@ body {
 
 /* Main */
 
-main section {
+/* main section {
   padding: 60px 0;
-}
+} */
 
 /* Header */
 
@@ -624,6 +624,96 @@ section.call {
   height: 210px;
 }
 
+
+
+
+/* Join */
+
+.join {
+  padding-block: 50px;
+}
+
+.join .btn-primary {
+  margin-left: -35px;
+}
+
+.join input,
+.join .btn-primary {
+  border-radius: 20px;
+}
+
+.join input {
+  padding-inline: 10px 35px;
+}
+
+.join input:focus {
+  outline: 1px solid #0d6efd;
+}
+
+.join h3 {
+  font-size: 24px;
+  font-family: var(--jost-family);
+  color: var(--blue-light);
+}
+
+.join p {
+  font-size: 15px;
+}
+
+/* Join end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer */
 
 .footer__top {
@@ -685,52 +775,6 @@ section.call {
   background: #f3f5fa;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer__bottom {
   padding: 30px 0;
   color: #fff;
@@ -740,3 +784,5 @@ section.call {
 .footer__bottom p {
   margin: 0;
 }
+
+/* F;ooter End */
